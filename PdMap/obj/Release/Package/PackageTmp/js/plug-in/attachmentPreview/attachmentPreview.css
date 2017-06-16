@@ -1,0 +1,106 @@
+﻿.attachmentsPreview {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: hsla(0,0%,6%,.95);
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+    overflow: hidden;
+}
+
+.attachmentsPreview-hedaer {
+    background-color: #000;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.attachmentsPreview .glyphicon-remove {
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 54px;
+    text-align: center;
+    width: 54px;
+}
+
+.attachmentsPreview .glyphicon-remove:hover {
+    background-color: rgba(221,44,0,.4);
+}
+
+.attachmentsPreview .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 143px;
+    background-color: #000;
+    width: 100%;
+    margin-left: 0;
+    padding: 36px 0;
+    margin: 0;
+}
+
+.attachmentsPreview .thumbnail {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.attachmentsPreview .carousel {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.attachmentsPreview .carousel-indicators li {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    border: none;
+}
+
+.attachmentsPreview .carousel-indicators li.active {
+    border: 2px solid #2196f3;
+}
+
+.attachmentsPreview .carousel-inner .item {
+    width: 100%;
+    height: 100%;
+}
+
+.attachmentsPreview .carousel-inner .item .img-container {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.attachmentsPreview .carousel-inner {
+    position: absolute;
+    top: 0;
+    bottom: 143px;
+}
+
+.attachmentsPreview .carousel-control {
+    bottom: 143px;
+}

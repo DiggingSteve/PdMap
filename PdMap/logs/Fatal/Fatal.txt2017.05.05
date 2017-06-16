@@ -1,0 +1,236 @@
+[18:07:27.721] [40] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToOpenDatabaseException: Unable to open database. Connection string: 'data source=.;user id=sa;password=***REMOVED***;initial catalog=pdmap;Persist Security Info=true;'; Error: 'System.Data.SqlClient.SqlException (0x80131904): 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+ClientConnectionId:284c4d6e-53ae-4044-a88e-e0bcc36b6fe3
+Error Number:18456,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateProviderFromString(String connectionString, AutoCreateOption autoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.DB.DataStoreBase.QueryDataStore(String providerType, String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[18:07:27.743] [40] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[18:07:27.747] [40] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\qq接收\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[18:07:32.157] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToOpenDatabaseException: Unable to open database. Connection string: 'data source=.;user id=sa;password=***REMOVED***;initial catalog=pdmap;Persist Security Info=true;'; Error: 'System.Data.SqlClient.SqlException (0x80131904): 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+ClientConnectionId:1fd8c1ba-76c3-4e85-b484-3b74024e5f8a
+Error Number:18456,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateProviderFromString(String connectionString, AutoCreateOption autoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.DB.DataStoreBase.QueryDataStore(String providerType, String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[18:07:32.159] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[18:07:32.160] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\qq接收\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[18:07:39.649] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToOpenDatabaseException: Unable to open database. Connection string: 'data source=.;user id=sa;password=***REMOVED***;initial catalog=pdmap;Persist Security Info=true;'; Error: 'System.Data.SqlClient.SqlException (0x80131904): 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+ClientConnectionId:95c0195c-ee14-4cfa-9fe7-d3e7d52cbadc
+Error Number:18456,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateProviderFromString(String connectionString, AutoCreateOption autoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.DB.DataStoreBase.QueryDataStore(String providerType, String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[18:07:39.651] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[18:07:39.652] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\qq接收\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[18:07:51.637] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToOpenDatabaseException: Unable to open database. Connection string: 'data source=.;user id=sa;password=***REMOVED***;initial catalog=pdmap;Persist Security Info=true;'; Error: 'System.Data.SqlClient.SqlException (0x80131904): 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+ClientConnectionId:8cb914d4-1270-4846-a665-d6079b75abc5
+Error Number:18456,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 用户 'sa' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateProviderFromString(String connectionString, AutoCreateOption autoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.DB.DataStoreBase.QueryDataStore(String providerType, String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[18:07:51.639] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[18:07:51.639] [43] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\Projects\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\qq接收\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\qq接收\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

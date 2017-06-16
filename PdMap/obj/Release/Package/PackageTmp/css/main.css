@@ -1,0 +1,212 @@
+﻿html, body, .main_wrap {
+    height: 100%;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: 0;
+    outline: 0;
+}
+
+#div_map {
+    height: 100%;
+}
+
+.menu_wrap {
+    position: fixed;
+    top: -100px;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(49, 46, 41, 0.52);
+    left: -600px;
+    z-index: 999;
+    transition: left .5s;
+    border-radius: 3%;
+    -moz-transition: left .5s; /* Firefox 4 */
+    -webkit-transition: left .5s; /* Safari 和 Chrome */
+    -o-transition: left .5s; /* Opera */
+}
+
+    .menu_wrap:hover {
+        left: 0;
+    }
+/*.menu_wrap .tail {background-color:#000;position:absolute;right:-23px;cursor:pointer;    
+    width: 23px;
+    height: 50px;}
+        .menu_wrap .tail span {font-size:16px;}
+        .menu_wrap .tail .text {width:19px; color:#fff}*/
+
+.table_detail {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+    .table_detail td {
+        padding: 9px 15px;
+        min-height: 20px;
+        line-height: 20px;
+        border: 1px solid #e2e2e2;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+.legend_wrap {
+    padding: 5px 15px;
+    position: fixed;
+    top: -300px;
+    left: 10px;
+    background-color: #ebebeb;
+    z-index: 999;
+    transition: all .5s linear;
+    -moz-transition: all .5s linear; /* Firefox 4 */
+    -webkit-transition: all .5s linear; /* Safari 和 Chrome */
+    -o-transition: all .5s linear; /* Opera */
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.searh_wrap {
+    position: fixed;
+    top: 28px;
+    left: 120px;
+    z-index: 999;
+}
+
+    .searh_wrap input[type=text] {
+        line-height: 30px;
+        font-size: 15px;
+        border: 1px solid #dedede;
+    }
+
+    .searh_wrap select {
+        height: 33px;
+        line-height: 33px;
+        font-size: 15px;
+        border: 1px solid #dedede;
+    }
+
+.legend_wrap .close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../Modules/images/control/infownd-close.png) no-repeat center;
+    background-size: 13px 13px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.legend_btn_wrap {
+    position: fixed;
+    top: 30px;
+    z-index: 998;
+    left: 10px;
+}
+
+    .legend_btn_wrap input[type=button] {
+        line-height: 30px;
+        background: #000;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+.legend {
+    color: #000;
+    height: 60px;
+    margin: 10px 0;
+    z-index: 999;
+    -moz-border-radius: 8px; /*8px是圆角的角度，值越大则圆角效果越明显，如果修改此项，请修改以下两项的值，使之相同*/
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+    .legend .legend_child {
+        float: left;
+        margin: 10px 5px 0;
+        font-size: 14px;
+    }
+
+    .legend .tag {
+        line-height: 64px;
+        margin-right: 10px;
+    }
+
+    .legend .legend_child img {
+        width: 18px;
+    }
+
+    .legend .legend_child .img {
+        text-align: center;
+    }
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.floatL {
+    float: left;
+}
+
+.info_window {
+    padding: 0px 5px;
+}
+
+    .info_window ul li span:nth-of-type(1):after {
+        content: ":";
+    }
+
+    .info_window ul li {
+        display: table-row;
+        line-height: 22px;
+    }
+
+        .info_window ul li span {
+            font-size: 14px;
+            padding: 0;
+            display: table-cell;
+        }
+
+            .info_window ul li span:nth-of-type(1) {
+                padding-right: 5px;
+                width:88px;
+                height: 20px;
+                text-align: left;
+            }
+
+.maptalks-msgBox {
+    min-width:200px;
+    max-width:300px;
+    min-height:0;
+    box-shadow:0 0 2px #666;
+}
+
+    .maptalks-msgBox h2 {
+        margin-top: 10px;
+        margin-bottom:-5px;
+        height: auto;
+        line-height: 20px;
+        text-align:center;
+    }
+
+    .maptalks-msgBox a.maptalks-close {
+        top: 2px;
+        right: 2px;
+    }
+
+    .maptalks-msgBox .maptalks-msgContent {
+        /*padding: 0 10px;*/
+    }

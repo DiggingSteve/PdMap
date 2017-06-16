@@ -1,0 +1,35 @@
+﻿<div class="attachmentsPreview">
+    <div class="attachmentsPreview-hedaer">
+        <span data-event="close" class="glyphicon glyphicon-remove" title="关闭"></span>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {{ for(var i=0;i<it.length;i++){ var item=it[i]; }}
+            <li data-target="#carousel-example-generic" data-slide-to="{{=i}}" class="{{=(i==0?"active":"")}}">
+                <img src="{{=item}}" class="thumbnail" />
+            </li>
+            {{ } }}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            {{for(var i=0;i<it.length;i++){ var item=it[i]; }}
+            <div class="item {{=(i==0?"active":"")}}">
+                <div class="img-container">
+                    <img src="{{=item}}">
+                </div>
+                <div class="container-fluid">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            {{ } }}
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,300 @@
+[13:38:08.674] [8] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:38:08.744] [8] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:38:08.750] [8] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:38:13.304] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:38:13.306] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:38:13.307] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:38:18.062] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:38:18.065] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:38:18.066] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:38:23.796] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:38:23.798] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:38:23.799] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:38:34.020] [10] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:38:34.038] [10] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:38:34.048] [10] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:39:29.052] [10] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:39:29.077] [10] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:39:29.084] [10] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:40:36.028] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:40:47.402] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:40:47.402] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:41:02.431] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:41:24.063] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:41:24.063] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:43:00.165] [6] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:43:03.560] [6] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:43:03.560] [6] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[13:43:32.904] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+DevExpress.Xpo.Exceptions.CannotFindAppropriateConnectionProviderException: Invalid connection string specified: 'server=192.168.10.127;database=pdmap;uid=sa;pwd=***REMOVED***;'.
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.Init() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+[13:43:34.081] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[13:43:34.081] [7] [192.168.10.135] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 G:\浦东地图\浦东地图修改2.0\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

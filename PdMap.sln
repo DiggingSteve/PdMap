@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdMap", "PdMap\PdMap.csproj", "{899F0936-713A-48D1-B875-A3297F4D92DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapUtil", "MapUtil\MapUtil.csproj", "{CFD8B6E9-D517-46C4-AB53-DB60A7A1FDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longjin.Util", "Longjin.Util\Longjin.Util.csproj", "{955F0866-D7AF-4801-B2DE-080B280CD791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longjin.Map.Business", "Longjin.Map.Business\Longjin.Map.Business.csproj", "{403E36C0-83E8-4E77-B390-BC86BD115E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{326ABCB5-E32A-4075-AE80-9237A534536F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longjin.Framework", "Longjin.Framework\Longjin.Framework.csproj", "{501809FD-1A97-4E10-BCED-3ED289CFFDF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longjin.Model", "Longjin.Model\Longjin.Model.csproj", "{BAA75AB3-58D4-49E2-ADCC-C73239FDFC65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{73BE58FA-D0B2-4753-A64D-08A4031C2217}"
+	ProjectSection(SolutionItems) = preProject
+		工地与车队提供材料\工地1.xlsx = 工地与车队提供材料\工地1.xlsx
+		工地与车队提供材料\工地2.xlsx = 工地与车队提供材料\工地2.xlsx
+		工地与车队提供材料\工地3.xlsx = 工地与车队提供材料\工地3.xlsx
+		工地与车队提供材料\浦东新区建筑垃圾运输企业基本信息表\泥浆-浦东新区建筑垃圾运输企业基本信息表.docx = 工地与车队提供材料\浦东新区建筑垃圾运输企业基本信息表\泥浆-浦东新区建筑垃圾运输企业基本信息表.docx
+		工地与车队提供材料\浦东新区建筑垃圾和工程渣土卸点清单.xlsx = 工地与车队提供材料\浦东新区建筑垃圾和工程渣土卸点清单.xlsx
+		工地与车队提供材料\浦东新区建筑垃圾运输企业基本信息表\渣土-浦东新区建筑垃圾运输企业基本信息表.doc = 工地与车队提供材料\浦东新区建筑垃圾运输企业基本信息表\渣土-浦东新区建筑垃圾运输企业基本信息表.doc
+		工地与车队提供材料\浦东新区建筑垃圾运输企业基本信息表\装修垃圾-浦东新区建筑垃圾运输企业基本信息表.doc = 工地与车队提供材料\浦东新区建筑垃圾运输企业基本信息表\装修垃圾-浦东新区建筑垃圾运输企业基本信息表.doc
+		工地与车队提供材料\车队.xlsx = 工地与车队提供材料\车队.xlsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{899F0936-713A-48D1-B875-A3297F4D92DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899F0936-713A-48D1-B875-A3297F4D92DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899F0936-713A-48D1-B875-A3297F4D92DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899F0936-713A-48D1-B875-A3297F4D92DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD8B6E9-D517-46C4-AB53-DB60A7A1FDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD8B6E9-D517-46C4-AB53-DB60A7A1FDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD8B6E9-D517-46C4-AB53-DB60A7A1FDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD8B6E9-D517-46C4-AB53-DB60A7A1FDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955F0866-D7AF-4801-B2DE-080B280CD791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955F0866-D7AF-4801-B2DE-080B280CD791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955F0866-D7AF-4801-B2DE-080B280CD791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955F0866-D7AF-4801-B2DE-080B280CD791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403E36C0-83E8-4E77-B390-BC86BD115E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403E36C0-83E8-4E77-B390-BC86BD115E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403E36C0-83E8-4E77-B390-BC86BD115E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403E36C0-83E8-4E77-B390-BC86BD115E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326ABCB5-E32A-4075-AE80-9237A534536F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326ABCB5-E32A-4075-AE80-9237A534536F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326ABCB5-E32A-4075-AE80-9237A534536F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326ABCB5-E32A-4075-AE80-9237A534536F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501809FD-1A97-4E10-BCED-3ED289CFFDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501809FD-1A97-4E10-BCED-3ED289CFFDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501809FD-1A97-4E10-BCED-3ED289CFFDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501809FD-1A97-4E10-BCED-3ED289CFFDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA75AB3-58D4-49E2-ADCC-C73239FDFC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA75AB3-58D4-49E2-ADCC-C73239FDFC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA75AB3-58D4-49E2-ADCC-C73239FDFC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA75AB3-58D4-49E2-ADCC-C73239FDFC65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

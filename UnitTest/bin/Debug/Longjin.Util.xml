@@ -1,0 +1,2171 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Longjin.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Longjin.Util.AsposeLicenseUtil">
+            <summary>
+            Aspose证书工具类
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.AsposeLicenseUtil.Key">
+            <summary>
+            秘钥
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.AsposeLicenseUtil.LStream">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.Location">
+            <summary>
+            坐标
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.Location.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.Location.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Location.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.PlaceResultDetailInfo">
+            <summary>
+            坐标结果详细信息
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.PlaceResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.name">
+            <summary>
+            poi名称
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.location">
+            <summary>
+            poi经纬度坐标 
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.address">
+            <summary>
+            poi地址信息 
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.street_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.telephone">
+            <summary>
+            poi电话信息 
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.detail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.uid">
+            <summary>
+            poi的唯一标示 
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.PlaceResult.detail_info">
+            <summary>
+            poi的扩展信息
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.PlaceSearchResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.PlaceDetailResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.PlaceDetailResults">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.Place">
+            <summary>
+            Place API 是一类简单的HTTP接口，用于返回查询某个区域的某类POI数据，且提供单个POI的详情查询服务，用户可以使用C#、C++、Java等开发语言发送HTTP请求且接收json、xml的数据。 
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Place.SearchByRegion(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+             Place API根据支持检索的区域类型，提供城市内方法
+            </summary>
+            <param name="region">城市，必填项</param>
+            <param name="query">检索关键字，支持多个关键字并集检索，不同关键字间以$符号分隔，最多支持10个关键字检索，必填项</param>
+            <param name="tag">标签项，与q组合进行检索，以“,”分隔</param>
+            <param name="output">json或xml，选填项</param>
+            <param name="scope">检索结果详细程度：1-基本信息 2-详细信息；取值为1 或空，则返回基本信息；取值为2，返回检索POI详细信息 ，必填项</param>
+            <param name="filter">检索过滤条件，选填项</param>
+            <param name="page_size">范围记录数量，默认为10条记录，最大返回20条。多关键字检索时，返回的记录数为关键字个数*page_size，选填项</param>
+            <param name="page_num">分页页码，默认为0；0代表第一页，1代表第二页，以此类推，选填项 </param>
+            <param name="ak">用户的访问密钥，必填项。</param>
+            <param name="sn">用户的权限签名，选填项</param>
+            <param name="timestamp">设置sn后该值必填。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Place.SearchByBounds(Longjin.Util.BaiduUtil.Location,Longjin.Util.BaiduUtil.Location,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+             Place API根据支持检索的区域类型，提供城市内方法
+            </summary>
+            <param name="left">区域左上角，必填项</param>
+            <param name="right">区域右下角，必填项</param>
+            <param name="query">检索关键字，支持多个关键字并集检索，不同关键字间以$符号分隔，最多支持10个关键字检索，必填项</param>
+            <param name="tag">标签项，与q组合进行检索，以“,”分隔</param>
+            <param name="output">json或xml，选填项</param>
+            <param name="scope">检索结果详细程度：1-基本信息 2-详细信息；取值为1 或空，则返回基本信息；取值为2，返回检索POI详细信息 ，必填项</param>
+            <param name="filter">检索过滤条件，选填项</param>
+            <param name="page_size">范围记录数量，默认为10条记录，最大返回20条。多关键字检索时，返回的记录数为关键字个数*page_size，选填项</param>
+            <param name="page_num">分页页码，默认为0；0代表第一页，1代表第二页，以此类推，选填项 </param>
+            <param name="ak">用户的访问密钥，必填项。</param>
+            <param name="sn">用户的权限签名，选填项</param>
+            <param name="timestamp">设置sn后该值必填。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Place.SearchByRadius(Longjin.Util.BaiduUtil.Location,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+             Place API根据支持检索的区域类型，提供圆形区域检索方法
+            </summary>
+            <param name="location">区域，必填项</param>
+            <param name="radius">区域，必填项</param>
+            <param name="query">检索关键字，支持多个关键字并集检索，不同关键字间以$符号分隔，最多支持10个关键字检索，必填项</param>
+            <param name="tag">标签项，与q组合进行检索，以“,”分隔</param>
+            <param name="output">json或xml，选填项</param>
+            <param name="scope">检索结果详细程度：1-基本信息 2-详细信息；取值为1 或空，则返回基本信息；取值为2，返回检索POI详细信息 ，必填项</param>
+            <param name="filter">检索过滤条件，选填项</param>
+            <param name="page_size">范围记录数量，默认为10条记录，最大返回20条。多关键字检索时，返回的记录数为关键字个数*page_size，选填项</param>
+            <param name="page_num">分页页码，默认为0；0代表第一页，1代表第二页，以此类推，选填项 </param>
+            <param name="ak">用户的访问密钥，必填项。</param>
+            <param name="sn">用户的权限签名，选填项</param>
+            <param name="timestamp">设置sn后该值必填。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Place.DetailByUid(System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="uid"></param>
+            <param name="output"></param>
+            <param name="scope"></param>
+            <param name="ak"></param>
+            <param name="sn"></param>
+            <param name="timestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Place.DetailByUids(System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="uids">uid的集合，最多可以传入10个uid，多个uid之间用英文逗号分隔。 </param>
+            <param name="output"></param>
+            <param name="scope"></param>
+            <param name="ak"></param>
+            <param name="sn"></param>
+            <param name="timestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingAddressResultJson">
+            <summary>
+            地理编码结果
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.GeocodingAddressResultJson.status">
+            <summary>
+            返回结果状态值， 成功返回0
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.GeocodingAddressResultJson.result">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingAddressResult">
+            <summary>
+            地理编码结果
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.GeocodingAddressResult.location">
+            <summary>
+            经纬度坐标
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.GeocodingAddressResult.precise">
+            <summary>
+            位置的附加信息，是否精确查找。1为精确查找，0为不精确。
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.GeocodingAddressResult.confidence">
+            <summary>
+            可信度
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.GeocodingAddressResult.level">
+            <summary>
+            地址类型
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingAddressComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingPoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingPOI">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingLocationResultJson">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.GeocodingLocationResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BaiduUtil.Geocoding">
+            <summary>
+            Geocoding API 是一类简单的HTTP接口，用于提供从地址到经纬度坐标或者从经纬度坐标到地址的转换服务，用户可以使用C# 、C++、Java等开发语言发送HTTP请求且接收JSON、XML的返回数据。 
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Geocoding.AddressToLocation(System.String,System.String,System.String)">
+            <summary>
+            地理编码 门牌地址转baidu坐标
+            </summary>
+            <param name="address">地址，必填</param>
+            <param name="city">城市，选填</param>
+            <param name="ak">秘钥，选填</param>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Geocoding.LocationToAddress(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            逆地理编码，GPS坐标转地址
+            </summary>
+            <param name="lat">维度</param>
+            <param name="lng">经度</param>
+            <param name="show">0-不显示周边信息 1-显示周边信息</param>
+            <param name="ak">秘钥，选填</param>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.Geocoding.LocationToAddress(System.Int32,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type">1-百度经纬度坐标 2-国测局经纬度坐标 3-GPS经纬度</param>
+            <param name="lat"></param>
+            <param name="lng"></param>
+            <param name="show"></param>
+            <param name="ak"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.GeoConv.Convert(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            将非百度坐标转换成百度坐标
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <param name="ak"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+        </member>
+        <member name="M:Longjin.Util.BaiduUtil.GeoConv.ConvertToGPS(System.String,System.String,System.String)">
+            <summary>
+            百度坐标转GSP坐标
+            </summary>
+            <param name="lng">百度经度</param>
+            <param name="lat">百度维度</param>
+            <param name="ak">百度秘钥</param>
+            <returns></returns>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.Geo._latitude">
+            <summary>
+            latitude
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.BaiduUtil.Geo._longtitude">
+            <summary>
+            longtitude
+            </summary>
+        </member>
+        <member name="P:Longjin.Util.BaiduUtil.Geo.Latitude">
+            <summary>
+            get latitude(纬度)
+            </summary>
+        </member>
+        <member name="P:Longjin.Util.BaiduUtil.Geo.Longtitude">
+            <summary>
+            get longtitude(经度)
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.BarCodeUtil">
+            <summary>
+            条形码工具类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.BarCodeUtil.CreateQRbarcode(System.String,System.String,System.Single,System.Single)">
+            <summary>
+            生成QR二维码
+            </summary>
+            <param name="filepath">二维码图片文件地址</param>
+            <param name="content">二维码内容</param>
+            <param name="width">宽度</param>
+            <param name="height">高度</param>
+            <returns>
+            10000 - 操作成功
+            10001 - 操作失败，二维码图片文件地址为空
+            10002 - 操作失败，二维码内容为空
+            10003 - 操作失败，宽度和高度设置不正确
+            10009 - 操作失败，其他错误
+            </returns>
+        </member>
+        <member name="M:Longjin.Util.BarCodeUtil.CreateQR(System.String,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Longjin.Util.BarCodeUtil.CombinImage(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+            <summary>  
+            调用此函数后使此两种图片合并，类似相册，有个  
+            背景图，中间贴自己的目标图片  
+            </summary>  
+            <param name="bgImg">粘贴的源图片</param>  
+            <param name="avatar">粘贴的目标图片</param>
+            <param name="newHeight"></param>
+            <param name="newWidth"></param>
+        </member>
+        <member name="M:Longjin.Util.BarCodeUtil.KiResizeImage(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>  
+            Resize图片  
+            </summary>  
+            <param name="img">原始Bitmap</param>  
+            <param name="newW">新的宽度</param>  
+            <param name="newH">新的高度</param>  
+            <returns>处理以后的图片</returns>  
+        </member>
+        <member name="M:Longjin.Util.BarCodeUtil.AddWhiteBorder(System.Drawing.Image,System.Int32)">
+            <summary>
+            在图片上方加入白边
+            </summary>
+            <param name="img">图片</param>
+            <param name="borderWidth">白边的高度，单位是像素</param>
+            <returns>Bitmap</returns>
+        </member>
+        <member name="T:Longjin.Util.CacheHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Insert(System.String,System.Object,System.String)">
+            <summary>
+            创建缓存项的文件依赖
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="obj">object对象</param>
+            <param name="fileName">文件绝对路径</param>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Insert(System.String,System.Object,System.Int32)">
+            <summary>
+            插入缓存数据 绝对过期
+            </summary>
+            <param name="key"></param>
+            <param name="obj"></param>
+            <param name="expires"></param>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Insert(System.String,System.Object,System.TimeSpan)">
+            <summary>
+            可调过期
+            </summary>
+            <param name="key"></param>
+            <param name="obj"></param>
+            <param name="slidingExpiration"></param>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Insert(System.String,System.Object)">
+            <summary>
+            缓存不过期
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Set(System.String,System.Object)">
+            <summary>
+            更新缓存
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Remove(System.String)">
+            <summary>
+            移除缓存
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Get(System.String)">
+            <summary>
+            获取缓存对象
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns>object对象</returns>
+        </member>
+        <member name="M:Longjin.Util.CacheHelper.Get``1(System.String)">
+            <summary>
+            获取缓存对象
+            </summary>
+            <typeparam name="T">T对象</typeparam>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.DateTimeUtil">
+            <summary>
+            时间工具类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.DateTimeUtil.ConvertToCHNDate(System.DateTime,System.Boolean)">
+            <summary>
+            转换成大写日期
+            false 2011-1-1 转换成 二〇一一年一月一日
+            true 2011-1-1 转换成 贰零壹壹年壹月壹日
+            </summary>
+            <param name="date">日期</param>
+            <param name="type">是否中文大写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DateTimeUtil.ConvertToCHNDate(System.DateTime)">
+            <summary>
+            转换成大写日期 
+            </summary>
+            <param name="date">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DateTimeUtil.ConvertToCHNDateTime(System.DateTime,System.Boolean)">
+            <summary>
+            日期转换成中文大写（含时间）
+            </summary>
+            <param name="date"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DateTimeUtil.UnixTimeStampToDateTime(System.Double)">
+            <summary>
+            将unix时间戳转成成日期时间类型
+            </summary>
+            <param name="unixTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DateTimeUtil.DateTimeToUnixTimeStamp(System.DateTime)">
+            <summary>
+            将日期类型转换成unix时间戳
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.DbHelper">
+            <summary>
+            数据库操作类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.CreateConnection">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.CreateConnection(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.GetStoredProcCommond(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="storedProcedure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.GetSqlStringCommond(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sqlQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.AddParameterCollection(System.Data.Common.DbCommand,System.Data.Common.DbParameterCollection)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="dbParameterCollection"></param>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.AddOutParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameterName"></param>
+            <param name="dbType"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.AddInParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameterName"></param>
+            <param name="dbType"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.AddReturnParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameterName"></param>
+            <param name="dbType"></param>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.GetParameter(System.Data.Common.DbCommand,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameterName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteDataSet(System.Data.Common.DbCommand)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteDataTable(System.Data.Common.DbCommand)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteReader(System.Data.Common.DbCommand)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteNonQuery(System.Data.Common.DbCommand)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteScalar(System.Data.Common.DbCommand)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteDataSet(System.Data.Common.DbCommand,Longjin.Util.Trans)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteDataTable(System.Data.Common.DbCommand,Longjin.Util.Trans)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteReader(System.Data.Common.DbCommand,Longjin.Util.Trans)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteNonQuery(System.Data.Common.DbCommand,Longjin.Util.Trans)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.DbHelper.ExecuteScalar(System.Data.Common.DbCommand,Longjin.Util.Trans)">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.Trans">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Longjin.Util.Trans.DbConnection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Longjin.Util.Trans.DbTrans">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.Trans.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.Trans.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:Longjin.Util.Trans.Commit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.Trans.RollBack">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.Trans.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.Trans.Colse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.SQLServerDAL">
+            <summary>
+            数据库操作类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.SQLServerDAL.ExecuteSql(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="SQLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SQLServerDAL.GetDataTable(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SQLServerDAL.GetCount(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SQLServerDAL.GetDouble(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SQLServerDAL.GetDecimal(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SQLServerDAL.GetLong(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Longjin.Util.DTKeys.SessionKey_CurrentUser">
+            <summary>
+            当前登录用户的信息
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.DTKeys.SessionKey_CurrentId">
+            <summary>
+            当前登录用户的用户Id
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.DTKeys.CacheKey_UserInfo">
+            <summary>
+            用户缓存key格式
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.ExcelHelper">
+            <summary>
+            Excel 帮助类
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.ExcelHelper.strConnFormat">
+            <summary>
+            EXCEL 链接字符串
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.ExcelHelper.ExcelReadDataSet(System.String,System.Boolean)">
+            <summary>
+            读取Excel文件内容到DataSet
+            </summary>
+            <param name="path"></param>
+            <param name="oneRowColumnName">第一行是否作为列名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.ExcelHelper.GetExcelTableNameList(System.String)">
+            <summary>
+            获取Excel的工作簿名称列表
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.ExcelHelper.ExportExcel(System.Data.DataSet,System.String)">
+            <summary>
+            把DataSet类型数据导出为Excel
+            </summary>
+            <param name="ds"></param>
+            <param name="fileName">如果需要保存为文件则传此名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.Log(System.String,System.String)">
+            <summary>
+            记录日志文件
+            </summary>
+            <param name="logpath">日志文件存放路径</param>
+            <param name="content">日志内容</param>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.ResponseFile(System.Web.HttpRequest,System.Web.HttpResponse,System.String,System.String,System.Int64)">
+            <summary>
+            文件下载
+            </summary>
+            <param name="_Request">HttpRequest</param>
+            <param name="_Response">HttpResponse</param>
+            <param name="_fileName">目的文件名称</param>
+            <param name="_fullPath">源文件路径</param>
+            <param name="_speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.ConvertToFileSize(System.Int64)">
+            <summary>
+            文件大小转换
+            </summary>
+            <param name="size">文件大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetMimeType(System.String)">
+            <summary>
+            获取文件的MimeType
+            </summary>
+            <param name="extension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetFileRealType(System.String)">
+            <summary>
+            真正判断文件类型的关键函数
+            </summary>
+            <param name="filepath">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetMapPath(System.String)">
+            <summary>
+            获得当前绝对路径
+            </summary>
+            <param name="strPath">指定的路径</param>
+            <returns>绝对路径</returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.DeleteFile(System.String)">
+            <summary>
+            删除单个文件
+            </summary>
+            <param name="_filepath">文件相对路径</param>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.DeleteDirectory(System.String)">
+            <summary>
+            删除指定文件夹
+            </summary>
+            <param name="_dirpath">文件相对路径</param>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.MoveDirectory(System.String,System.String)">
+            <summary>
+            修改指定文件夹名称
+            </summary>
+            <param name="old_dirpath">旧相对路径</param>
+            <param name="new_dirpath">新相对路径</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetFileSize(System.String)">
+            <summary>
+            返回文件大小KB
+            </summary>
+            <param name="_filepath">文件相对路径</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetFileExt(System.String)">
+            <summary>
+            返回文件扩展名，不含“.”
+            </summary>
+            <param name="_filepath">文件全名称</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetRealExt(System.String)">
+            <summary>
+            获取文件的真实扩展名  手动改变无效
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetRealExt(System.IO.Stream)">
+            <summary>
+            获取文件真是扩展名
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetRealExtByFileClass(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fileClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetFileExt(System.Web.HttpPostedFile)">
+            <summary>
+            返回文件扩展名，不含“.”
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetFileName(System.Web.HttpPostedFile)">
+            <summary>
+            获取文件名 不包含 扩展名
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.GetFileName(System.String)">
+            <summary>
+            返回文件名不包含扩展名
+            </summary>
+            <param name="_filepath">文件相对路径</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Longjin.Util.FileUtil.FileExists(System.String)">
+            <summary>
+            文件是否存在
+            </summary>
+            <param name="_filepath">文件相对路径</param>
+            <returns>bool</returns>
+        </member>
+        <member name="T:Longjin.Util.FileExtension">
+            <summary>
+            文件扩展名枚举
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.AttachmentRequestURL">
+            <summary>
+            附件请求的地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApiSiteUrl">
+            <summary>
+            Api站点请求地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_Att_SourceType_Templet">
+            <summary>
+            样板图的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_Att_SourceType_Avatar">
+            <summary>
+            头像的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_MEETINGROOM_STATUS">
+            <summary>
+            会议室状态枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_MEETINGROOM_STATUS_USABLE">
+            <summary>
+            会议室可用枚举值
+            </summary> 
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_RENT_TYPE">
+            <summary>
+            场地租用枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERPRISER_TAG">
+            <summary>
+            企业标签父枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_Att_SourceType_Activity">
+            <summary>
+            活动枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_Att_SourceType_Photo">
+            <summary>
+            一寸照的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_Att_SourceType_Airtle">
+            <summary>
+            文章Logo
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_Att_SourceType_Vita">
+            <summary>
+            简历的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_GENDER">
+            <summary>
+            性别的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_EDUCATION">
+            <summary>
+            学历的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_POLITICAL">
+            <summary>
+            政治面貌的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_POSITION">
+            <summary>
+            职位类别的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONALVITASTATUS">
+            <summary>
+            个人简历状态的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONALVITASTATUS_PENDING">
+            <summary>
+            个人简历审核中的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONALVITASTATUS_PASSED">
+            <summary>
+            个人简历审核通过的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONALVITASTATUS_NOTPASSED">
+            <summary>
+            个人简历审核不通过的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_TRADE">
+            <summary>
+            行业类别的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_VISATYPE">
+            <summary>
+            签证类别的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_VISASTATUS">
+            <summary>
+            签证状态的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_VISASTATUS_PENDING">
+            <summary>
+            签证状态审核中的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_VISASTATUS_PASSED">
+            <summary>
+            签证状态审核通过的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_VISASTATUS_NOTPASSED">
+            <summary>
+            签证状态审核不通过的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONALJOBSTATUS">
+            <summary>
+            个人简历求职状态
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_DUTYTIME">
+            <summary>
+            到岗时间
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERPRISESTATUS">
+            <summary>
+            企业需求状态的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERPRISE_PENDING">
+            <summary>
+            企业需求状态审核中的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERPRISE_PASSED">
+            <summary>
+            企业需求状态审核通过的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERPRISE_NOTPASSED">
+            <summary>
+            企业需求状态审核不通过的枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONAL_CLASS">
+            <summary>
+            人员类别
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PERSONAL_LIVINGMASTER">
+            <summary>
+            居住事由
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM">
+            <summary>
+            文章归属平台
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SUBSCRIPTIONTYPE">
+            <summary>
+            订阅平台类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SUBSCRIPTION_WORK">
+            <summary>
+            订阅平台类型-劳动法
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SUBSCRIPTION_FTA">
+            <summary>
+            订阅平台类型-自贸区政策
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SUBSCRIPTION_GOLD">
+            <summary>
+            订阅平台类型-四金
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SUBSCRIPTION_PERSONAL">
+            <summary>
+            订阅平台类型-自人力资源政策
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SUBSCRIPTION_OTHER">
+            <summary>
+            订阅平台类型-其他
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM_YKTYHXX">
+            <summary>
+            文章归属平台-一卡通优惠信息
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM_RCZC">
+            <summary>
+            文章归属平台-人才政策
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM_ZCZX">
+            <summary>
+            文章归属平台-职场资讯
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM_SSDT">
+            <summary>
+            文章归属平台-实时动态
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM_SSXTS">
+            <summary>
+            文章归属平台-生活小贴士
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ARTICLEPLATFORM_EDUCATION">
+            <summary>
+            文章-金致生活-教育
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PLATFORM_ADMIN">
+            <summary>
+            平台-园区管理后台
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PLATFORM_PERSONALAPP">
+            <summary>
+            平台-个人APP
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PLATFORM_PERSONAL">
+            <summary>
+            平台-个人
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PLATFORM_PERSONALPC">
+            <summary>
+            平台-个人PC
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_PLATFORM_ENTERPRISE">
+            <summary>
+            平台-企业
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARDSTATUS_NORMAL">
+            <summary>
+            一卡通状态-正常
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARDSTATUS_LOSS">
+            <summary>
+            一卡通状态-挂失
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARDSTATUS_CANCEL">
+            <summary>
+            一卡通状态-注销
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_OPERATETYPE">
+            <summary>
+            一卡通操作
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_OPERATETYPE_BIND">
+            <summary>
+            一卡通操作-绑定
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_OPERATETYPE_LOSS">
+            <summary>
+            一卡通操作-挂失
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_OPERATETYPE_GET">
+            <summary>
+            一卡通操作-获得积分
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_OPERATETYPE_AREA">
+            <summary>
+            一卡通操作-积分消费
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_INTEGRALTYPE">
+            <summary>
+            积分类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CREDITTYPE_ENVIRONMENTAL">
+            <summary>
+            环保类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CREDITTYPE_CATERING">
+            <summary>
+            餐饮积分
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CREDITTYPE_CULTURE">
+            <summary>
+            文化积分
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CREDITTYPE_INTEGRAL">
+            <summary>
+            我的积分
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_APARTMENTSTATUS">
+            <summary>
+            房源状态
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_LAYOUT">
+            <summary>
+            户型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.WeatherRequestURL">
+            <summary>
+            生活-天气请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ExpressRequestURL">
+            <summary>
+            生活-常用快递请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BusRequestURL">
+            <summary>
+            生活-公交请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.AirQualityRequestURL">
+            <summary>
+            生活-空气质量
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.MobileAttRequestURL">
+            <summary>
+            生活-手机号码归属地请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.HeadlinesRequestURL">
+            <summary>
+            生活-新闻头条请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.PerpetualCalendarRequestURL">
+            <summary>
+            生活-万年历请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ZipDetailsRequestURL">
+            <summary>
+            生活-邮编信息请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.WeChatDetailsRequestURL">
+            <summary>
+            生活-微信精选请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ShopRequestURL">
+            <summary>
+            商铺请求URL地址
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleLoginRequestURL">
+            <summary>
+            自行车-登录认证接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleMemberInfoRequestURL">
+            <summary>
+            自行车-会员信息获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleCardInfoRequestURL">
+            <summary>
+            自行车-会员卡信息获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleConsumeInfoRequestURL">
+            <summary>
+            自行车-交易记录获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleRunlevelRequestURL">
+            <summary>
+            自行车-运营区域获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleBaseInfoBatchRequestURL">
+            <summary>
+            自行车-网点列表获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleBaseInfoRequestURL">
+            <summary>
+            自行车-单个网点信息获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleDeviceInfoRequestURL">
+            <summary>
+            自行车-网点锁柱列表获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleLendRequestURL">
+            <summary>
+            自行车-借车接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleBaseConfigRequestURL">
+            <summary>
+            自行车-基础配置获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleGpsRequestURL">
+            <summary>
+            自行车-所有网点GPS坐标获取接口
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.BicycleGetShortestRequestURL">
+            <summary>
+            自行车-获取某个坐标的最近网点
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentApplicationType">
+            <summary>
+            人才公寓审批状态类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentHRPending">
+            <summary>
+            HR审核中
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentHRReject">
+            <summary>
+            HR拒绝
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentZonePending">
+            <summary>
+            园区审核中
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentZoneReject">
+             <summary>
+            园区拒绝 
+             </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentPass">
+            <summary>
+            通过（排队中）
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentCheckIn">
+            <summary>
+            已入住
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ApartmentAbandon">
+            <summary>
+            主动放弃
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.IDTYPE">
+            <summary>
+            证件类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.IDTYPE_ID">
+            <summary>
+            身份证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.IDTYPE_PASSPORT">
+            <summary>
+            护照
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.IDTYPE_HONGKONG">
+            <summary>
+            港澳通行证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.IDTYPE_TAIWAN">
+            <summary>
+            台湾通行证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.IDTYPE_OTHERS">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.VEHICLE">
+            <summary>
+            车辆情况
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.VEHICLE_CAR">
+            <summary>
+            私家车
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.VEHICLE_ELECTRIC">
+            <summary>
+            电动车
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.VEHICLE_MOBIKE">
+            <summary>
+            自行车
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.VEHICLE_OTHERS">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.LEASE">
+            <summary>
+            希望使用年限
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.LEASE_ONE">
+            <summary>
+            一年
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.LEASE_TWO">
+            <summary>
+            两年
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.LEASE_THREE">
+            <summary>
+            三年
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.LEASE_FOUR">
+            <summary>
+            四年
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.LEASE_FIVE">
+            <summary>
+            五年
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.CONTRACTSUBJECT">
+            <summary>
+            签约主体
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.CONTRACTSUBJECT_ENTERPRISE">
+            <summary>
+            签约主体-企业
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.CONTRACTSUBJECT_PERSONAL">
+            <summary>
+            签约主体-个人
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.INCOME">
+            <summary>
+            收入
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.INCOME_LOW">
+            <summary>
+            5001-10000
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.INCOME_MEDIUM">
+            <summary>
+            10001-15000
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.INCOME_HIGH">
+            <summary>
+            15001-20000
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.INCOME_VERYHIGH">
+            <summary>
+            20000以上
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_USER_POSITION">
+            <summary>
+            企业账号职位
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_USER_POSITION_HRMANAGER">
+            <summary>
+            企业账号职位-HR
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_USER_GENERALMANAGER">
+            <summary>
+            总经理
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.APPROVALTYPE">
+            <summary>
+            网上审批大厅地址父类
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERAPPLY_STATUS_NOTPASS">
+            <summary>
+            入驻申请状态不通过枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERAPPLY_STATUS_PASS">
+            <summary>
+            入驻申请状态通过枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ENTERAPPLY_STATUS_PENDING">
+            <summary>
+            入驻申请状态审核中枚举值
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_APPLY_ACCOUNT_STATUS">
+            <summary>
+            企业申请账号状态
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_APPLY_ACCOUNT_PENDING">
+            <summary>
+            审核中
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_APPLY_ACCOUNT_APPROVAL">
+            <summary>
+            通过
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISE_APPLY_ACCOUNT_REJECT">
+            <summary>
+            拒绝
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_FMQZ">
+            <summary>
+            快捷审批-赴美签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_ADLYLYQZ">
+            <summary>
+            快捷审批-澳大利亚旅游签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_JNDLYQZ">
+            <summary>
+            快捷审批-加拿大旅游签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_RBQZ">
+            <summary>
+            快捷审批-日本签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_HGQZ">
+            <summary>
+            快捷审批-韩国签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_YGQZ">
+            <summary>
+            快捷审批-英国签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_JZZJF">
+            <summary>
+            快捷审批-居住证积分
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_CRJKSTD">
+            <summary>
+            快捷审批-出境快速通道
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_RQZ">
+            <summary>
+            快捷审批--R签证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_WGZJ">
+            <summary>
+            快捷审批--外国专家
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_WGRJYZ">
+            <summary>
+            快捷审批--外国人就业证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_GZJLXKZ">
+            <summary>
+            快捷审批--工作居留许可
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_BLJZZZ">
+            <summary>
+            快捷审批--B类居住证
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_RJKSTD">
+            <summary>
+            快捷审批--入境快速通道
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_STATUS_CHECK">
+             <summary>
+            快捷审批状态- 审核中
+             </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_STATUS_PASS">
+             <summary>
+            快捷审批状态- 通过
+             </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_QUICKAPPROVAL_STATUS_FAIL">
+            <summary>
+            快捷审批状态-拒绝
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.POTENTIAL_ENTERPRISE_STATUS">
+            <summary>
+            企业生命周期管理状态
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.POTENTIAL_ENTERPRISE_STATUS_CONTACTING">
+            <summary>
+            潜在企业，联系中
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.POTENTIAL_ENTERPRISE_STATUS_SETTLED">
+            <summary>
+            潜在企业，已入驻
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.POTENTIAL_ENTERPRISE_STATUS_SIGNOUT">
+            <summary>
+            潜在企业，已退出
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISELIFE_LOG_TYPE">
+            <summary>
+            企业生命周期企业日志类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISELIFE_LOG_TYPE_NORMAL">
+            <summary>
+            企业日志类型普通
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENTERPRISELIFE_LOG_TYPE_SIGNOUT">
+            <summary>
+            企业日志类型退出
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_APP_MODULE">
+            <summary>
+            App模块
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_APP_MODULE_HOME">
+            <summary>
+            App模块-首页
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_APP_MODULE_TALENT">
+            <summary>
+            App模块-人才直通车
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_APP_MODULE_LIFE">
+            <summary>
+            App模块-金致生活
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_APP_MODULE_CARD">
+            <summary>
+            App模块-一卡通
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_ACTIVITY_TYPE_TRAIN">
+            <summary>
+            活动类型-人才培训
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARD_HANDLE_TYPE_CAREER">
+            <summary>
+            一卡通卡操作类型-简历填写（个人）
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARD_HANDLE_TYPE_CERTIFICATION">
+            <summary>
+            一卡通卡操作类型-实名认证（企业）
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARD_HANDLE_TYPE_QUICK_APPROVAL">
+            <summary>
+            一卡通卡操作类型-快捷审批
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_CARD_HANDLE_TYPE_TRAINING">
+            <summary>
+            一卡通卡操作类型-人才培训
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.ENUM_SMS_TEMPLATE">
+            <summary>
+            短息inbox类型
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.SMS_TEMPLATE_SMS">
+            <summary>
+            短信模板
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.SMS_TEMPLATE_INBOX">
+            <summary>
+            inbox模板
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.SERVICE_SHXTS">
+            <summary>
+            服务-生活小贴士
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.SERVICE_WEATHER">
+            <summary>
+             服务-天气
+            </summary>
+        </member>
+        <member name="F:Longjin.Util.GlobalConfig.SERVICE_EDUCATION">
+            <summary>
+             服务-教育
+            </summary>
+        </member>
+        <member name="T:Longjin.Util.HttpUtil">
+            <summary>
+            HTTP
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.HttpUtil.GetHtml(System.String)">
+            <summary>
+            HTTP GET方法
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.HttpUtil.HttpPost(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            HTTP POST方式请求数据
+            </summary>
+            <param name="url">URL.</param>
+            <param name="data">POST的数据</param>
+            <param name="headers">需要添加的头部信息</param>
+            <param name="charset">字符编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.HttpUtil.HttpGet(System.String)">
+            <summary>
+            HTTP GET方式请求数据.
+            </summary>
+            <param name="url">URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.HttpUtil.HttpsPost(System.String,System.String)">
+            <summary>
+            https Post请求
+            </summary>
+            <param name="url"></param>
+            <param name="strData"></param>
+            <param name="charset"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.ImageUtil">
+            <summary>
+            图像工具类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.ImageUtil.#ctor">
+            <summary>
+            图片相关公共方法
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.ImageUtil.MakeJPGBytes(System.String,System.Int64,System.Int32,System.Int32,System.String)">
+            <summary> 
+            生成jpg缩略图字节
+            </summary> 
+            <param name="originalImagePath">原始路径</param> 
+            <param name="quality">质量0-100</param> 
+            <param name="width">宽度</param> 
+            <param name="height">高度</param> 
+            <param name="mode">模式：HW,W,H,Cut--->HW:指定高宽缩放（可能变形）;W:指定宽，高按比例 ;H:指定高，宽按比例 ;Cut:指定高宽裁减（不变形） </param> 
+            <returns></returns> 
+        </member>
+        <member name="M:Longjin.Util.ImageUtil.GetCodecInfo(System.String)">
+            <summary> 
+            保存JPG时用 
+            </summary> 
+            <param name="mimeType"></param> 
+            <returns>得到指定mimeType的ImageCodecInfo</returns> 
+        </member>
+        <member name="M:Longjin.Util.ImageUtil.Resize(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            更改图片大小
+            </summary>
+            <param name="inputimage">原图片文件位置</param>
+            <param name="outimage">更改后图片文件位置</param>
+            <param name="width">更改后宽度，像素点 0-表示按照高度等比例</param>
+            <param name="height">更改后高度，像素点 0-表示按照宽度等比例</param>
+            <returns>
+            10000 - 更改成功
+            10001 - 原图片文件不存在
+            10002 - 宽度不能为负数
+            10003 - 高度不能为负数
+            10004 - 宽度和高度不能同时设置为0
+            10009 - 其他错误
+            </returns>
+        </member>
+        <member name="M:Longjin.Util.ImageUtil.ConvertImageFormat(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.MobileUtil">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.MobileUtil.JudgeMobileType(System.String)">
+            <summary>
+            判断手机号码类型
+            </summary>
+            <param name="mobile">手机号码</param>
+            <returns>0-非上海手机 1-电信 2-移动 3-联通 4-虚拟运营商(电信) 5-虚拟运营商(移动) 6-虚拟运营商(联通)</returns>
+        </member>
+        <member name="M:Longjin.Util.MobileUtil.JudgeLandLineType(System.String)">
+            <summary>
+            判断固定电话类型
+            </summary>
+            <param name="landline">固定电话</param>
+            <returns>1-电信 2-移动 3-联通</returns>
+        </member>
+        <member name="T:Longjin.Util.MoneyUtil">
+            <summary>
+            金额转换工具类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.MoneyUtil.ToUpper(System.Decimal)">
+            <summary>
+            小写金额转换为大写金额，其中金额小于一万亿，最多两位小数
+            </summary>
+            <param name="d">源金额(金额小于一万亿，最多两位小数)</param>
+            <returns>结果，大写金额</returns>
+        </member>
+        <member name="M:Longjin.Util.MoneyUtil.m_strConvertSingleUnit(System.String,System.String)">
+            <summary>
+            把一个单元转为大写，如亿单元，万单元，个单元
+            </summary>
+            <param name="p_strNumeric">这个单元的小写数字（4位长，若不足，则前面补零）</param>
+            <param name="p_strUnit">亿，万，元</param>
+            <returns>转换结果</returns>
+        </member>
+        <member name="M:Longjin.Util.MoneyUtil.m_strConvertSingleNumeric(System.Char)">
+            <summary>
+            单个数字转为大写
+            </summary>
+            <param name="p_chrSingleNumeric">小写阿拉伯数字 0---9</param>
+            <returns>大写数字</returns>
+        </member>
+        <member name="T:Longjin.Util.NumberUtil">
+            <summary>
+            数字工具类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.NumberUtil.ToChineseNumber(System.Int64)">
+            <summary>
+            阿拉伯数字转换成中文数字
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.NumberUtil.ToChineseNumber(System.Int64,System.Boolean)">
+            <summary>
+            阿拉伯数字转换成中文数字
+            </summary>
+            <param name="number">数字</param>
+            <param name="isupper">是否中文大写</param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.SecureUtil">
+            <summary>
+            安全工具类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.EncryptStringByMD5(System.String)">
+            <summary>
+            字符串按MD5进行加密
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.EncryptStringByDES(System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="pToEncrypt">需要加密的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.EncryptStringByDES(System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="pToEncrypt">需要加密的字符串</param>
+            <param name="sKey">密钥</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.DecryptStringByDES(System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="pToDecrypt">需要解密的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.DecryptStringByDES(System.String,System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="pToDecrypt">需要解密的字符串</param>
+            <param name="sKey">密钥</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.EncryptStringBySHA256(System.String)">
+            <summary>
+            sha256加密
+            </summary>
+            <param name="strData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.Des3EncodeCBC(System.String,System.Byte[])">
+            <summary>
+            3DES加密
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.Des3DecodeCBC(System.String,System.Byte[])">
+            <summary>
+            3DES解密
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.HexToBytes(System.String)">
+            <summary>
+            16进制字符串转成直接数组
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.GetDes3EncryptedText(System.Byte[],System.Byte[])">
+            <summary>
+            3DES加密
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.GetByteToHex(System.Byte[])">
+            <summary>
+            将加密结果转成字符串
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.SecureUtil.EncryptByDes(System.String,System.String)">
+            <summary>
+            DES加密 
+            </summary>
+            <param name="pToEncrypt">需要加密的字符串</param>
+            <param name="sKey">密钥</param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.StringUtil">
+            <summary>
+            字符串操作类
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.ConvertToHTML(System.String)">
+            <summary>
+            将Text字符串转换成HTML格式字符串
+            </summary>
+            <param name="str">需要转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.Ellipsis(System.String,System.Int32,System.String)">
+            <summary>
+            按指定的长度截取字符串
+            </summary>
+            <param name="str">要截取的字符串</param>
+            <param name="len">长度</param>
+            <param name="suffix">后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.RemoveHtmlTag(System.String)">
+            <summary>
+            移除Html标签
+            </summary>
+            <param name="html">要移除HTML标签的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.GetPYString(System.String)">
+            <summary>
+            汉字转拼音首字母
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.ConvertChsToFirstLetterPinyin(System.String)">
+            <summary>
+            将汉字转换成拼音首字母
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.ConvertChsToPinyin(System.String)">
+            <summary>
+            将汉字转换成拼音首字母
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.GetChineseCharCount(System.String)">
+            <summary>
+            获取字符串中的汉字字数
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.GetTokenCharCount(System.String)">
+            <summary>
+            获取字符串中的标点符号
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.ConvertToJSString(System.String)">
+            <summary>
+             将Text字符串转换成javascript格式字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.StringUtil.IsGuid(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strSrc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Longjin.Util.ThumbnailHelper">
+            <summary>
+            图片缩略图
+            </summary>
+        </member>
+        <member name="M:Longjin.Util.ThumbnailHelper.ResizeImage(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            计算新尺寸
+            </summary>
+            <param name="width">原始宽度</param>
+            <param name="height">原始高度</param>
+            <param name="maxWidth">最大新宽度</param>
+            <param name="maxHeight">最大新高度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Longjin.Util.ThumbnailHelper.CreateThumbnailImageSave(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+            <summary>
+            制作缩略图
+            </summary>
+            <param name="original">图片对象</param>
+            <param name="newFileName">新图路径</param>
+            <param name="maxWidth">最大宽度</param>
+            <param name="maxHeight">最大高度</param>
+        </member>
+        <member name="M:Longjin.Util.ThumbnailHelper.CreateThumbnailImage(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>
+            制作缩略图并返回
+            </summary>
+            <param name="original">图片对象</param>
+            <param name="maxWidth">最大宽度</param>
+            <param name="maxHeight">最大高度</param>
+        </member>
+        <member name="M:Longjin.Util.ThumbnailHelper.CreateThumbnailImageSave(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            制作缩略图 并保存
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="newFileName">新图路径</param>
+            <param name="maxWidth">最大宽度</param>
+            <param name="maxHeight">最大高度</param>
+        </member>
+        <member name="M:Longjin.Util.ThumbnailHelper.CreateThumbnailImage(System.String,System.Int32,System.Int32)">
+            <summary>
+            制作缩略图 并返回Image
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="maxWidth">最大宽度</param>
+            <param name="maxHeight">最大高度</param>
+        </member>
+    </members>
+</doc>

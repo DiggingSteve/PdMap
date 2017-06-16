@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>G:\pdmap</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="bin/Aspose.BarCode.dll">
+      <publishTime>04/25/2017 16:34:23</publishTime>
+    </File>
+    <File Include="bin/Aspose.Cells.dll">
+      <publishTime>04/25/2017 16:34:24</publishTime>
+    </File>
+    <File Include="bin/Aspose.Imaging.dll">
+      <publishTime>04/25/2017 16:34:24</publishTime>
+    </File>
+    <File Include="bin/ChnCharInfo.dll">
+      <publishTime>04/25/2017 16:34:12</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v15.1.dll">
+      <publishTime>04/25/2017 16:34:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Xpo.v15.1.dll">
+      <publishTime>04/25/2017 16:34:26</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>04/25/2017 16:34:16</publishTime>
+    </File>
+    <File Include="bin/Longjin.Framework.dll">
+      <publishTime>06/13/2017 11:38:11</publishTime>
+    </File>
+    <File Include="bin/Longjin.Model.dll">
+      <publishTime>06/13/2017 11:38:11</publishTime>
+    </File>
+    <File Include="bin/Longjin.Util.dll">
+      <publishTime>06/13/2017 11:38:11</publishTime>
+    </File>
+    <File Include="bin/MapUtil.dll">
+      <publishTime>06/13/2017 11:38:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>04/25/2017 16:34:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>04/25/2017 16:34:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>04/25/2017 16:34:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>04/25/2017 16:34:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>04/25/2017 16:34:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>04/25/2017 16:34:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>04/25/2017 16:34:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Diagnostics.Tracing.EventSource.dll">
+      <publishTime>04/25/2017 16:34:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.dll">
+      <publishTime>04/25/2017 16:34:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.Desktop.dll">
+      <publishTime>04/25/2017 16:34:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.dll">
+      <publishTime>04/25/2017 16:34:12</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/25/2017 16:34:16</publishTime>
+    </File>
+    <File Include="bin/PdMap.dll">
+      <publishTime>06/13/2017 15:58:54</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>04/25/2017 16:34:13</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>04/25/2017 16:34:13</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>04/25/2017 16:34:13</publishTime>
+    </File>
+    <File Include="Config/appSettings.config">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="Config/connectionStrings.config">
+      <publishTime>06/08/2017 16:31:19</publishTime>
+    </File>
+    <File Include="Config/log4net.config">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css.map">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css.map">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap.css.map">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css.map">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="css/main.css">
+      <publishTime>06/09/2017 15:15:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="init/initTruck.aspx">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="init/车队.xlsx">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/common.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/layer/layer.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/icon-ext.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/icon.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/loading-0.gif">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/loading-1.gif">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/loading-2.gif">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/layer/skin/layer.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/alert/alert.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/alert/alert.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/alert/images/alterError.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/alert/images/alterRight.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/alert/images/alterWarnning.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/attachmentPreview/attachmentPreview.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/attachmentPreview/attachmentPreview.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/attachmentPreview/tpl/preview.html">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/date/calendar.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/date/calendar.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/es5Safe/es5Safe.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/json/json3.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/layer.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/mobile/layer.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/mobile/need/layer.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/skin/default/icon-ext.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/skin/default/icon.png">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/skin/default/layer.css">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/skin/default/loading-0.gif">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/skin/default/loading-1.gif">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/layer/skin/default/loading-2.gif">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/uploader/plupload/moxie.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/uploader/plupload/Moxie.swf">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/uploader/plupload/Moxie.xap">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/uploader/plupload/plupload.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/plug-in/uploader/uploader.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/seajs-config.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/sea-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/sea.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-combo-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-combo.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-css-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-css.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-flush-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-flush.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-health-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-health.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-preload-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-preload.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-style-debug.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-style.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-text-debug.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="js/seajs/seajs-text.js">
+      <publishTime>04/25/2017 16:34:09</publishTime>
+    </File>
+    <File Include="Map/Defalut.aspx">
+      <publishTime>03/20/2017 17:04:30</publishTime>
+    </File>
+    <File Include="Map/Default.aspx">
+      <publishTime>06/13/2017 14:47:47</publishTime>
+    </File>
+    <File Include="Map/DoAction.aspx">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="MapCss/Default.html">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/construction.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/3.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/4.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/5_1.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/ico-dot.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/infownd-close-hover.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/infownd-close.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/control/kedu.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/default.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/less15ton.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/more15ton.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/truck.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/wuluan.png">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/images/停工.png">
+      <publishTime>04/26/2017 10:22:26</publishTime>
+    </File>
+    <File Include="Modules/images/开工.png">
+      <publishTime>04/26/2017 10:19:09</publishTime>
+    </File>
+    <File Include="Modules/images/打桩.png">
+      <publishTime>04/26/2017 10:19:09</publishTime>
+    </File>
+    <File Include="Modules/images/提前.png">
+      <publishTime>04/26/2017 10:19:09</publishTime>
+    </File>
+    <File Include="Modules/images/未验.png">
+      <publishTime>04/26/2017 10:19:09</publishTime>
+    </File>
+    <File Include="Modules/images/正常.png">
+      <publishTime>03/22/2017 15:42:18</publishTime>
+    </File>
+    <File Include="Modules/images/进出土.png">
+      <publishTime>04/26/2017 10:19:09</publishTime>
+    </File>
+    <File Include="Modules/map/legend.js">
+      <publishTime>06/13/2017 15:56:26</publishTime>
+    </File>
+    <File Include="Modules/map/longjin.maptalks.js">
+      <publishTime>04/27/2017 13:54:04</publishTime>
+    </File>
+    <File Include="Modules/map/map.css">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/map/map.js">
+      <publishTime>06/13/2017 10:56:26</publishTime>
+    </File>
+    <File Include="Modules/map/map.menu.js">
+      <publishTime>06/13/2017 15:58:33</publishTime>
+    </File>
+    <File Include="Modules/map/mapcss.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/map/maptalks.clusterlayer.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/map/maptalks.css">
+      <publishTime>04/26/2017 15:57:03</publishTime>
+    </File>
+    <File Include="Modules/map/maptalks.halolayer.js">
+      <publishTime>04/28/2017 14:45:46</publishTime>
+    </File>
+    <File Include="Modules/map/maptalks.heat.js">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/map/maptalks.heatlayer.js">
+      <publishTime>03/28/2017 16:09:54</publishTime>
+    </File>
+    <File Include="Modules/map/maptalks.js">
+      <publishTime>04/07/2017 13:46:35</publishTime>
+    </File>
+    <File Include="Modules/map/tpl/landfillDetail.html">
+      <publishTime>06/09/2017 15:13:01</publishTime>
+    </File>
+    <File Include="Modules/map/tpl/markerDetail.html">
+      <publishTime>04/28/2017 15:27:20</publishTime>
+    </File>
+    <File Include="Modules/map/tpl/selectedDetail.html">
+      <publishTime>04/25/2017 16:34:07</publishTime>
+    </File>
+    <File Include="Modules/map/tpl/transportSoilDetail.html">
+      <publishTime>04/28/2017 15:27:49</publishTime>
+    </File>
+    <File Include="Modules/map/tpl/truckDetail.html">
+      <publishTime>06/13/2017 11:37:00</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/bootstrapValidator.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/bootstrapValidator.min.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/doT.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.0.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.0.min.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.0.min.map">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cookie-1.4.1.min.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cookie.js">
+      <publishTime>04/25/2017 16:34:04</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/13/2017 11:38:13</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

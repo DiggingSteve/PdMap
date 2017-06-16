@@ -1,0 +1,5 @@
+G:\Projects\PdMap\Longjin.Map.Business\bin\Release\butt.dll
+G:\Projects\PdMap\Longjin.Map.Business\bin\Release\butt.pdb
+G:\Projects\PdMap\Longjin.Map.Business\obj\Release\Longjin.Map.Business.csprojResolveAssemblyReference.cache
+G:\Projects\PdMap\Longjin.Map.Business\obj\Release\butt.dll
+G:\Projects\PdMap\Longjin.Map.Business\obj\Release\butt.pdb

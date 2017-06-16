@@ -1,0 +1,16 @@
+[19:29:51.659] [5] [192.168.10.40] "GET /init/initTruck.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Web.HttpException (0x80004005): 类型“Button”的控件“ctl01”必须放在具有 runat=server 的窗体标记内。
+   在 System.Web.UI.Page.VerifyRenderingInServerForm(Control control)
+   在 System.Web.UI.WebControls.Button.AddAttributesToRender(HtmlTextWriter writer)
+   在 System.Web.UI.WebControls.WebControl.RenderBeginTag(HtmlTextWriter writer)
+   在 System.Web.UI.WebControls.WebControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

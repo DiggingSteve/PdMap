@@ -1,0 +1,287 @@
+[17:20:42.857] [42] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Data.SqlClient.SqlException (0x80131904): 在数据库 'master' 中拒绝了 CREATE DATABASE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDb()
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase(SqlConnection conn)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateDataBase()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider..ctor(IDbConnection connection, AutoCreateOption autoCreateOption)
+   在 DevExpress.Xpo.DB.MSSqlConnectionProvider.CreateProviderFromString(String connectionString, AutoCreateOption autoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.DB.DataStoreBase.QueryDataStore(String providerType, String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetConnectionProvider(String connectionString, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption, IDisposable[]& objectsToDisposeOnDisconnect)
+   在 DevExpress.Xpo.XpoDefault.GetDataLayer(String connectionString, XPDictionary dictionary, AutoCreateOption defaultAutoCreateOption)
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 24
+ClientConnectionId:439b74ca-0c00-4cef-85d3-c62a184e5c9d
+Error Number:262,State:1,Class:14
+[17:20:42.891] [42] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[17:20:42.915] [42] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:23:03.205] [7] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToCreateDBObjectException: Unable to create 'Table' 'LJ_MAP_ConstructionSite'. Parent: ''. Error: Executing Sql 'create table "dbo"."LJ_MAP_ConstructionSite" ("Key" int NOT NULL IDENTITY NOT FOR REPLICATION, "ArchivesNo" nvarchar(100) NULL, "ProjectNo" nvarchar(100) NULL, "Name" nvarchar(100) NULL, "District" nvarchar(100) NULL, "Address" nvarchar(100) NULL, "BuildingCompany" nvarchar(100) NULL, "MajorCompany" nvarchar(100) NULL, "SuperviseCompany" nvarchar(100) NULL, "AreaAmount" nvarchar(100) NULL, "Expense" double precision NULL, "ProjectManager" nvarchar(100) NULL, "Phone" nvarchar(100) NULL, "TransportCompany" nvarchar(100) NULL, "Destination" nvarchar(100) NULL, "CompleteStatus" nvarchar(100) NULL, "Grouping" nvarchar(100) NULL, "TransportSoil" nvarchar(100) NULL, "License" nvarchar(100) NULL, "Comments" nvarchar(100) NULL, "BuildingLicence" nvarchar(100) NULL, "Status" int NULL, "BaiduLat" double precision NULL, "BaiduLong" double precision NULL, "Longitude" double precision NULL, "Latitude" double precision NULL, "GaodeLat" double precision NULL, "GaodeLong" double precision NULL, "OptimisticLockField" int NULL, "GCRecord" int NULL)' with parameters '' exception 'System.Data.SqlClient.SqlException (0x80131904): 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+ClientConnectionId:f7fb5d66-8fbd-40bd-bbcd-c2a0a1ac0629
+Error Number:262,State:1,Class:14' ---> DevExpress.Xpo.DB.Exceptions.SqlExecutionErrorException: Executing Sql 'create table "dbo"."LJ_MAP_ConstructionSite" ("Key" int NOT NULL IDENTITY NOT FOR REPLICATION, "ArchivesNo" nvarchar(100) NULL, "ProjectNo" nvarchar(100) NULL, "Name" nvarchar(100) NULL, "District" nvarchar(100) NULL, "Address" nvarchar(100) NULL, "BuildingCompany" nvarchar(100) NULL, "MajorCompany" nvarchar(100) NULL, "SuperviseCompany" nvarchar(100) NULL, "AreaAmount" nvarchar(100) NULL, "Expense" double precision NULL, "ProjectManager" nvarchar(100) NULL, "Phone" nvarchar(100) NULL, "TransportCompany" nvarchar(100) NULL, "Destination" nvarchar(100) NULL, "CompleteStatus" nvarchar(100) NULL, "Grouping" nvarchar(100) NULL, "TransportSoil" nvarchar(100) NULL, "License" nvarchar(100) NULL, "Comments" nvarchar(100) NULL, "BuildingLicence" nvarchar(100) NULL, "Status" int NULL, "BaiduLat" double precision NULL, "BaiduLong" double precision NULL, "Longitude" double precision NULL, "Latitude" double precision NULL, "GaodeLat" double precision NULL, "GaodeLong" double precision NULL, "OptimisticLockField" int NULL, "GCRecord" int NULL)' with parameters '' exception 'System.Data.SqlClient.SqlException (0x80131904): 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+ClientConnectionId:f7fb5d66-8fbd-40bd-bbcd-c2a0a1ac0629
+Error Number:262,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecuteSqlSchemaUpdate(String objectTypeName, String objectName, String parentObjectName, String textSql)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecuteSqlSchemaUpdate(String objectTypeName, String objectName, String parentObjectName, String textSql)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.CreateTable(DBTable table)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ProcessUpdateSchema(Boolean skipIfFirstTableNotExists, DBTable[] tables)
+   在 DevExpress.Xpo.DB.DataStoreSerializedBase.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, DBTable[] tables)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, DBTable[] tables)
+   在 DevExpress.Xpo.SimpleDataLayer.UpdateSchema(Boolean dontCreate, XPClassInfo[] types)
+   在 DevExpress.Xpo.Helpers.DataLayerWrapperS18452.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, XPClassInfo[] types)
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 33
+[17:23:03.811] [7] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[17:23:03.812] [7] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:23:09.148] [11] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToCreateDBObjectException: Unable to create 'Table' 'LJ_MAP_ConstructionSite'. Parent: ''. Error: Executing Sql 'create table "dbo"."LJ_MAP_ConstructionSite" ("Key" int NOT NULL IDENTITY NOT FOR REPLICATION, "ArchivesNo" nvarchar(100) NULL, "ProjectNo" nvarchar(100) NULL, "Name" nvarchar(100) NULL, "District" nvarchar(100) NULL, "Address" nvarchar(100) NULL, "BuildingCompany" nvarchar(100) NULL, "MajorCompany" nvarchar(100) NULL, "SuperviseCompany" nvarchar(100) NULL, "AreaAmount" nvarchar(100) NULL, "Expense" double precision NULL, "ProjectManager" nvarchar(100) NULL, "Phone" nvarchar(100) NULL, "TransportCompany" nvarchar(100) NULL, "Destination" nvarchar(100) NULL, "CompleteStatus" nvarchar(100) NULL, "Grouping" nvarchar(100) NULL, "TransportSoil" nvarchar(100) NULL, "License" nvarchar(100) NULL, "Comments" nvarchar(100) NULL, "BuildingLicence" nvarchar(100) NULL, "Status" int NULL, "BaiduLat" double precision NULL, "BaiduLong" double precision NULL, "Longitude" double precision NULL, "Latitude" double precision NULL, "GaodeLat" double precision NULL, "GaodeLong" double precision NULL, "OptimisticLockField" int NULL, "GCRecord" int NULL)' with parameters '' exception 'System.Data.SqlClient.SqlException (0x80131904): 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+ClientConnectionId:f7fb5d66-8fbd-40bd-bbcd-c2a0a1ac0629
+Error Number:262,State:1,Class:14' ---> DevExpress.Xpo.DB.Exceptions.SqlExecutionErrorException: Executing Sql 'create table "dbo"."LJ_MAP_ConstructionSite" ("Key" int NOT NULL IDENTITY NOT FOR REPLICATION, "ArchivesNo" nvarchar(100) NULL, "ProjectNo" nvarchar(100) NULL, "Name" nvarchar(100) NULL, "District" nvarchar(100) NULL, "Address" nvarchar(100) NULL, "BuildingCompany" nvarchar(100) NULL, "MajorCompany" nvarchar(100) NULL, "SuperviseCompany" nvarchar(100) NULL, "AreaAmount" nvarchar(100) NULL, "Expense" double precision NULL, "ProjectManager" nvarchar(100) NULL, "Phone" nvarchar(100) NULL, "TransportCompany" nvarchar(100) NULL, "Destination" nvarchar(100) NULL, "CompleteStatus" nvarchar(100) NULL, "Grouping" nvarchar(100) NULL, "TransportSoil" nvarchar(100) NULL, "License" nvarchar(100) NULL, "Comments" nvarchar(100) NULL, "BuildingLicence" nvarchar(100) NULL, "Status" int NULL, "BaiduLat" double precision NULL, "BaiduLong" double precision NULL, "Longitude" double precision NULL, "Latitude" double precision NULL, "GaodeLat" double precision NULL, "GaodeLong" double precision NULL, "OptimisticLockField" int NULL, "GCRecord" int NULL)' with parameters '' exception 'System.Data.SqlClient.SqlException (0x80131904): 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+ClientConnectionId:f7fb5d66-8fbd-40bd-bbcd-c2a0a1ac0629
+Error Number:262,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecuteSqlSchemaUpdate(String objectTypeName, String objectName, String parentObjectName, String textSql)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecuteSqlSchemaUpdate(String objectTypeName, String objectName, String parentObjectName, String textSql)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.CreateTable(DBTable table)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ProcessUpdateSchema(Boolean skipIfFirstTableNotExists, DBTable[] tables)
+   在 DevExpress.Xpo.DB.DataStoreSerializedBase.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, DBTable[] tables)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, DBTable[] tables)
+   在 DevExpress.Xpo.SimpleDataLayer.UpdateSchema(Boolean dontCreate, XPClassInfo[] types)
+   在 DevExpress.Xpo.Helpers.DataLayerWrapperS18452.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, XPClassInfo[] types)
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 33
+[17:23:11.782] [11] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[17:23:11.783] [11] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:23:42.925] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+DevExpress.Xpo.DB.Exceptions.UnableToCreateDBObjectException: Unable to create 'Table' 'LJ_MAP_ConstructionSite'. Parent: ''. Error: Executing Sql 'create table "dbo"."LJ_MAP_ConstructionSite" ("Key" int NOT NULL IDENTITY NOT FOR REPLICATION, "ArchivesNo" nvarchar(100) NULL, "ProjectNo" nvarchar(100) NULL, "Name" nvarchar(100) NULL, "District" nvarchar(100) NULL, "Address" nvarchar(100) NULL, "BuildingCompany" nvarchar(100) NULL, "MajorCompany" nvarchar(100) NULL, "SuperviseCompany" nvarchar(100) NULL, "AreaAmount" nvarchar(100) NULL, "Expense" double precision NULL, "ProjectManager" nvarchar(100) NULL, "Phone" nvarchar(100) NULL, "TransportCompany" nvarchar(100) NULL, "Destination" nvarchar(100) NULL, "CompleteStatus" nvarchar(100) NULL, "Grouping" nvarchar(100) NULL, "TransportSoil" nvarchar(100) NULL, "License" nvarchar(100) NULL, "Comments" nvarchar(100) NULL, "BuildingLicence" nvarchar(100) NULL, "Status" int NULL, "BaiduLat" double precision NULL, "BaiduLong" double precision NULL, "Longitude" double precision NULL, "Latitude" double precision NULL, "GaodeLat" double precision NULL, "GaodeLong" double precision NULL, "OptimisticLockField" int NULL, "GCRecord" int NULL)' with parameters '' exception 'System.Data.SqlClient.SqlException (0x80131904): 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+ClientConnectionId:ec78a22d-634f-4595-9152-5a4f1d89f015
+Error Number:262,State:1,Class:14' ---> DevExpress.Xpo.DB.Exceptions.SqlExecutionErrorException: Executing Sql 'create table "dbo"."LJ_MAP_ConstructionSite" ("Key" int NOT NULL IDENTITY NOT FOR REPLICATION, "ArchivesNo" nvarchar(100) NULL, "ProjectNo" nvarchar(100) NULL, "Name" nvarchar(100) NULL, "District" nvarchar(100) NULL, "Address" nvarchar(100) NULL, "BuildingCompany" nvarchar(100) NULL, "MajorCompany" nvarchar(100) NULL, "SuperviseCompany" nvarchar(100) NULL, "AreaAmount" nvarchar(100) NULL, "Expense" double precision NULL, "ProjectManager" nvarchar(100) NULL, "Phone" nvarchar(100) NULL, "TransportCompany" nvarchar(100) NULL, "Destination" nvarchar(100) NULL, "CompleteStatus" nvarchar(100) NULL, "Grouping" nvarchar(100) NULL, "TransportSoil" nvarchar(100) NULL, "License" nvarchar(100) NULL, "Comments" nvarchar(100) NULL, "BuildingLicence" nvarchar(100) NULL, "Status" int NULL, "BaiduLat" double precision NULL, "BaiduLong" double precision NULL, "Longitude" double precision NULL, "Latitude" double precision NULL, "GaodeLat" double precision NULL, "GaodeLong" double precision NULL, "OptimisticLockField" int NULL, "GCRecord" int NULL)' with parameters '' exception 'System.Data.SqlClient.SqlException (0x80131904): 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+ClientConnectionId:ec78a22d-634f-4595-9152-5a4f1d89f015
+Error Number:262,State:1,Class:14' ---> System.Data.SqlClient.SqlException: 在数据库 'pdmap' 中拒绝了 CREATE TABLE 权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.<>c__DisplayClass2.<InternalExecSql>b__0()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.InternalExecSql(IDbCommand command)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecSql(Query query)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecuteSqlSchemaUpdate(String objectTypeName, String objectName, String parentObjectName, String textSql)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ExecuteSqlSchemaUpdate(String objectTypeName, String objectName, String parentObjectName, String textSql)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.CreateTable(DBTable table)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.ProcessUpdateSchema(Boolean skipIfFirstTableNotExists, DBTable[] tables)
+   在 DevExpress.Xpo.DB.DataStoreSerializedBase.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, DBTable[] tables)
+   在 DevExpress.Xpo.DB.ConnectionProviderSql.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, DBTable[] tables)
+   在 DevExpress.Xpo.SimpleDataLayer.UpdateSchema(Boolean dontCreate, XPClassInfo[] types)
+   在 DevExpress.Xpo.Helpers.DataLayerWrapperS18452.UpdateSchema(Boolean dontCreateIfFirstTableNotExist, XPClassInfo[] types)
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 33
+[17:24:01.209] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+[17:24:01.210] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentNullException: 值不能为 null。
+参数名: layer
+   在 DevExpress.Xpo.Session.SessionInitConnected(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IObjectLayer layer, IDisposable[] disposeOnDisconnect)
+   在 DevExpress.Xpo.Session..ctor(IDataLayer layer, IDisposable[] disposeOnDisconnect)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

@@ -1,0 +1,285 @@
+[15:16:02.426] [5] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:16:56.533] [7] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:17:30.514] [7] [127.0.0.1] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:18:02.898] [5] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:18:16.583] [5] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:19:27.388] [7] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:20:59.769] [7] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[15:21:47.247] [7] [192.168.10.59] "GET /Map/Defalut.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 75
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[16:48:45.095] [13] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 18
+[16:48:46.368] [13] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(0)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[16:49:18.950] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 18
+[16:49:44.470] [7] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 18
+[16:50:01.511] [7] [192.168.10.59] "POST /Map/DoAction.aspx" 数据库初始化异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Longjin.Framework.DababaseSession.Init() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 18
+[16:54:36.946] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(0)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[16:55:22.270] [10] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.NotSupportedException: 不支持所指定的方法。
+   在 DevExpress.Xpo.Parser.Where(MethodCallExpression call)
+   在 DevExpress.Xpo.Parser.CallQueryable(MethodCallExpression call)
+   在 DevExpress.Xpo.Parser.Call(MethodCallExpression call)
+   在 DevExpress.Xpo.Parser.ParseExpressionCore(Expression expression)
+   在 DevExpress.Xpo.Parser.ParseExpression(Expression expression)
+   在 DevExpress.Xpo.Parser.ParseExpression(XPClassInfo classInfo, CustomCriteriaCollection customCriteriaCollection, Expression expression, CriteriaOperator[] maps)
+   在 DevExpress.Xpo.XPQueryBase.Where(MethodCallExpression call)
+   在 DevExpress.Xpo.XPQueryBase.Call(MethodCallExpression call)
+   在 DevExpress.Xpo.XPQuery`1.System.Linq.IQueryProvider.CreateQuery[S](Expression expression)
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 19
+[16:55:22.274] [10] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NotSupportedException: 不支持所指定的方法。
+   在 DevExpress.Xpo.Parser.Where(MethodCallExpression call)
+   在 DevExpress.Xpo.Parser.CallQueryable(MethodCallExpression call)
+   在 DevExpress.Xpo.Parser.Call(MethodCallExpression call)
+   在 DevExpress.Xpo.Parser.ParseExpressionCore(Expression expression)
+   在 DevExpress.Xpo.Parser.ParseExpression(Expression expression)
+   在 DevExpress.Xpo.Parser.ParseExpression(XPClassInfo classInfo, CustomCriteriaCollection customCriteriaCollection, Expression expression, CriteriaOperator[] maps)
+   在 DevExpress.Xpo.XPQueryBase.Where(MethodCallExpression call)
+   在 DevExpress.Xpo.XPQueryBase.Call(MethodCallExpression call)
+   在 DevExpress.Xpo.XPQuery`1.System.Linq.IQueryProvider.CreateQuery[S](Expression expression)
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 19
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[16:57:42.527] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(0)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[16:58:40.477] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(0)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[16:59:47.725] [9] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(0)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:28:55.020] [7] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(0)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 67
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:31:24.837] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(1)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 72
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:31:59.982] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(1)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 72
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:37:25.515] [5] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(1)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 72
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:37:59.094] [9] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(1)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 72
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[17:38:52.676] [8] [192.168.10.59] "POST /Map/DoAction.aspx" 页面执行异常 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ParamException: 数据库链接未初始化(1)
+   在 Longjin.Framework.DababaseSession.CreateSession() 位置 H:\PdMap\Longjin.Framework\DababaseSession.cs:行号 72
+   在 PdMap.Web.BasePage.get_DBSession() 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 25
+   在 PdMap.Web.Map.DoAction.GetTruckAndConstruction() 位置 H:\PdMap\PdMap\Map\DoAction.aspx.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 PdMap.Web.BasePage.Page_Load(Object sender, EventArgs e) 位置 H:\PdMap\PdMap\App_Code\BasePage.cs:行号 80
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

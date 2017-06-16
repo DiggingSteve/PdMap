@@ -1,0 +1,5 @@
+H:\PdMap\Longjin.Map.Business\bin\Debug\Longjin.Map.Business.dll
+H:\PdMap\Longjin.Map.Business\bin\Debug\Longjin.Map.Business.pdb
+H:\PdMap\Longjin.Map.Business\obj\Debug\Longjin.Map.Business.dll
+H:\PdMap\Longjin.Map.Business\obj\Debug\Longjin.Map.Business.pdb
+H:\PdMap\Longjin.Map.Business\obj\Debug\Longjin.Map.Business.csprojResolveAssemblyReference.cache

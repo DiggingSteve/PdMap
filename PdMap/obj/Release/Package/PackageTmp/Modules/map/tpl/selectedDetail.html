@@ -1,0 +1,8 @@
+﻿<table class="table_detail">
+    <tbody>
+        {{if(it&&it.length>0){}}
+        {{for(var i=0;i<it.length;i++){ var item=it[i].properties; }}
+        <tr><td>类型</td><td>{{=item.ClassName}}</td><td>名称</td><td>{{=item.Name}}</td></tr>
+        {{ } } }}
+    </tbody>
+</table>
