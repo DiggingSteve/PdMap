@@ -20,7 +20,7 @@
         </div>
         <div class="searh_wrap">
             <select class="select" id="sel_type">
-                <option value="name">名称</option>
+                <option value="name">名称 </option>
                 <option value="addr">地址</option>
                 <option value="side">建设方</option>
             </select>

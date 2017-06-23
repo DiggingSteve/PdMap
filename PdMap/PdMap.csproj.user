@@ -3,7 +3,7 @@
   <PropertyGroup>
     <UseIISExpress>true</UseIISExpress>
     <ProjectView>ProjectFiles</ProjectView>
-    <ToolsVersionPromptShown>2.1</ToolsVersionPromptShown>
+    <ToolsVersionPromptShown>2.2</ToolsVersionPromptShown>
     <NameOfLastUsedPublishProfile>pdmap</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
