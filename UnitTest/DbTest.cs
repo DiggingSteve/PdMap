@@ -18,7 +18,9 @@ namespace UnitTest
             str = SecureUtil.EncryptStringByDES(str);
             Console.WriteLine(str);
             str = SecureUtil.EncryptStringByDES("server=192.168.10.127;database=pdmap;uid=sa;pwd=123456;");
-            Console.WriteLine(str);
+            Console.WriteLine(str); 
+
+
 
         }
     }
