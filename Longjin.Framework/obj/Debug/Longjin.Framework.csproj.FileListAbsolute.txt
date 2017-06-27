@@ -20,3 +20,8 @@ G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framewor
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\obj\Debug\Longjin.Framework.csprojResolveAssemblyReference.cache
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\obj\Debug\Longjin.Framework.dll
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Framework\obj\Debug\Longjin.Framework.pdb
+D:\Git\PdMap\Longjin.Framework\bin\Debug\Longjin.Framework.dll
+D:\Git\PdMap\Longjin.Framework\bin\Debug\Longjin.Framework.pdb
+D:\Git\PdMap\Longjin.Framework\obj\Debug\Longjin.Framework.csprojResolveAssemblyReference.cache
+D:\Git\PdMap\Longjin.Framework\obj\Debug\Longjin.Framework.dll
+D:\Git\PdMap\Longjin.Framework\obj\Debug\Longjin.Framework.pdb

@@ -31,3 +31,14 @@ G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Model\bi
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Model\obj\Debug\Longjin.Model.csprojResolveAssemblyReference.cache
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Model\obj\Debug\Longjin.Model.dll
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\Longjin.Model\obj\Debug\Longjin.Model.pdb
+D:\Git\PdMap\Longjin.Model\bin\Debug\Longjin.Model.dll
+D:\Git\PdMap\Longjin.Model\bin\Debug\Longjin.Model.pdb
+D:\Git\PdMap\Longjin.Model\bin\Debug\DevExpress.Xpo.v15.1.dll
+D:\Git\PdMap\Longjin.Model\bin\Debug\Longjin.Framework.dll
+D:\Git\PdMap\Longjin.Model\bin\Debug\DevExpress.Data.v15.1.dll
+D:\Git\PdMap\Longjin.Model\bin\Debug\log4net.dll
+D:\Git\PdMap\Longjin.Model\bin\Debug\Newtonsoft.Json.dll
+D:\Git\PdMap\Longjin.Model\bin\Debug\Longjin.Framework.pdb
+D:\Git\PdMap\Longjin.Model\obj\Debug\Longjin.Model.csprojResolveAssemblyReference.cache
+D:\Git\PdMap\Longjin.Model\obj\Debug\Longjin.Model.dll
+D:\Git\PdMap\Longjin.Model\obj\Debug\Longjin.Model.pdb

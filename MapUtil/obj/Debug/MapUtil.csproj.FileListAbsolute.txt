@@ -24,3 +24,9 @@ G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\MapUtil\bin\Debu
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\MapUtil\obj\Debug\MapUtil.csprojResolveAssemblyReference.cache
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\MapUtil\obj\Debug\MapUtil.dll
 G:\代码\浦东城管\浦东地图\浦东地图修改2.0\PdMap\MapUtil\obj\Debug\MapUtil.pdb
+D:\Git\PdMap\MapUtil\bin\Debug\MapUtil.dll
+D:\Git\PdMap\MapUtil\bin\Debug\MapUtil.pdb
+D:\Git\PdMap\MapUtil\bin\Debug\Newtonsoft.Json.dll
+D:\Git\PdMap\MapUtil\obj\Debug\MapUtil.csprojResolveAssemblyReference.cache
+D:\Git\PdMap\MapUtil\obj\Debug\MapUtil.dll
+D:\Git\PdMap\MapUtil\obj\Debug\MapUtil.pdb

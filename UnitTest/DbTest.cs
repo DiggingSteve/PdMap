@@ -13,7 +13,7 @@ namespace UnitTest
             var database = "pdmap";
             var uid = "sa";
             var pwd = "123456";
-            var server = ".";
+            var server = "DESKTOP-CJ4E1HH\\DB";
             var str = string.Format("XpoProvider=MSSqlServer;data source={0};user id={1};password={2};initial catalog={3};Persist Security Info=true", server, uid, pwd, database);
             str = SecureUtil.EncryptStringByDES(str);
             Console.WriteLine(str);
